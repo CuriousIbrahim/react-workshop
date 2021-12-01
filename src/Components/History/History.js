@@ -1,9 +1,11 @@
+import "./History.css";
+
 export function History(props) {
   const words = props.words;
 
   const content = words.map((word, i) => (
-    <li key={i} onClick={() => props.onWordClick(word)}>
-      <a href="#">{word}</a>
+    <li className="ListItem" key={i} onClick={() => props.onWordClick(word)}>
+      {word}
     </li>
   ));
 
