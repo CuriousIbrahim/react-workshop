@@ -1,5 +1,3 @@
-export function Error (word) {
-    return (
-        <h1>Error: The word `{word}` does not exist!</h1>
-    )
+export function Error(errorDescription) {
+  return <h1>Error: {errorDescription}</h1>;
 }
